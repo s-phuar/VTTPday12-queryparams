@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Images</title>
+</head>
+<body>
+    
+    <h1>Hello <span data-th-text="${name}"></span></h1>
+    <h2>This is your <span data-th-text="${count}"></span> lucky numbers</h2>
+
+    <div th:each="image : ${images}">
+        <img th:src="${image}" alt="Lucky Image" style="width: 200px; margin: 10px;">
+    </div>
+
+      <div>
+         <a href="/"> <h3>Back</h3> </a>
+         <!-- button to go back to landing page -->
+      </div>
+
+</body>
+</html>
