@@ -58,7 +58,7 @@ public class GenerateController {
 
         //check whether name has been input in index.html landing page
         //if not, our template defaults to list.html
-        if(!form.containsKey("name")){  
+        if(form.containsKey("list")){  
             List<String> newImagePaths = new ArrayList<>();  // List to hold all image paths, refreshed
             //create array based on query parameter list
             String imgList [] = form.getFirst("list").split(",");
