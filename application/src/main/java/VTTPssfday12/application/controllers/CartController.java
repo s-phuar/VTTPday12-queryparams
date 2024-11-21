@@ -44,9 +44,9 @@ public class CartController {
          name = "";
       }
 
-      model.addAttribute("name", name.toUpperCase());
-      model.addAttribute("items", items);
-      model.addAttribute("count", itemCount);
+      model.addAttribute("name", name.toUpperCase()); //fruit names
+      model.addAttribute("items", items); //sends over List
+      model.addAttribute("count", itemCount); //sends over no. of fruit types
 
       return "cart"; //forwards the data to the dynamic cart view
    }
@@ -71,9 +71,9 @@ public class CartController {
 
       List<LineItem> items = Constants.generateLineItems(itemCount);
 
-      model.addAttribute("name", name.toUpperCase());
-      model.addAttribute("items", items);
-      model.addAttribute("count", itemCount);
+      model.addAttribute("name", name.toUpperCase()); //name of fruits
+      model.addAttribute("items", items); //sends the List
+      model.addAttribute("count", itemCount); //no. of fruit types
 
       return "cart"; //forwards the data to the dynamic cart view
    }

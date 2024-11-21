@@ -21,6 +21,7 @@
       <table border="1">
          <thead>
             <tr>
+               <th>Index</th>
                <th>Item</th>
                <th>Quantity</th>
             </tr>
@@ -29,6 +30,7 @@
             <!-- foreach (LineItem item: items) -->
             <tr data-th-each="item, status: ${items}">
                <td>
+                  <!-- outputs the index of the current iteration -->
                   <span data-th-text="${status.index}"></span>
                </td>
                <td>

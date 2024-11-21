@@ -20,6 +20,7 @@ import java.util.Random;
 
 public class GenerateController {
 
+    //method to parse string to int
     private int toInt(String str, int defValue){
         try{
             return Integer.parseInt(str);
